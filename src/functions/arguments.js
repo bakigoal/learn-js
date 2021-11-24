@@ -15,10 +15,13 @@ test(42, 33)
 test(42, 33, 45)
 test(42, 33, 45, 23, 234, 35, 566, 575, "23423", 66)
 
-function addWork() {
-    let length = arguments.length;
+function addWork(first) {
     console.log("ЗАписываю работу :")
-    for (let i = 0; i < length; i++) {
+    console.log("- ", first)
+
+    let length = arguments.length;
+    console.log(length)
+    for (let i = 1; i < length; i++) {
         console.log("- ", arguments[i])
     }
 }
